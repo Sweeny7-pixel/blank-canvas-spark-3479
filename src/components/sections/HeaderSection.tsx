@@ -1,28 +1,33 @@
 import { personalInfo } from "@/data/portfolio-data";
+import RotatingText from "@/components/RotatingText";
 
 /**
  * HeaderSection Component
- * Split name layout with centered image
+ * Animated headline with rotating phrase, paired with the profile image
  */
 export default function HeaderSection() {
   const currentYear = new Date().getFullYear();
-  const nameParts = personalInfo.name.split(' ');
-  const firstName = nameParts[0];
-  const lastName = nameParts.slice(1).join(' ');
-  
+
   return (
     <section className="flex items-center justify-center px-8 md:px-16 lg:px-24 pt-24 pb-20 md:pt-28 md:pb-24">
       <div className="w-full max-w-7xl">
-        <div className="text-center mb-16 md:mb-20">
-          <p className="text-tiny tracking-widest">{personalInfo.title}</p>
-        </div>
-        
         <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-center">
           <div className="text-center lg:text-left">
-            <h1 className="text-display lg:text-[7.5rem] leading-[0.95] font-light lg:font-normal">
-              <span className="block">{firstName}</span>
-              <span className="block">{lastName}</span>
+            <span className="inline-block rounded-full border border-foreground/20 px-5 py-2 text-tiny tracking-widest mb-8 md:mb-10">
+              {personalInfo.eyebrow}
+            </span>
+
+            <h1 className="text-display lg:text-[5.5rem] leading-[1.05] font-light lg:font-normal">
+              <span className="block">{personalInfo.headlinePrefix}</span>
+              <RotatingText
+                phrases={personalInfo.headlinePhrases}
+                className="text-primary"
+              />
             </h1>
+
+            <p className="text-body leading-relaxed mt-8 md:mt-10 max-w-xl mx-auto lg:mx-0 text-muted-foreground">
+              {personalInfo.tagline}
+            </p>
           </div>
 
           <div className="flex justify-center lg:justify-end">
@@ -34,7 +39,6 @@ export default function HeaderSection() {
           </div>
         </div>
 
-        
         <div className="text-center mt-16 md:mt-20">
           <p className="text-small">{currentYear}</p>
         </div>
