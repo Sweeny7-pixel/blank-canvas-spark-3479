@@ -19,6 +19,13 @@ export interface PersonalInfo {
   tagline: string;
 }
 
+export interface Differentiator {
+  id: string;
+  title: string;
+  description: string;
+  icon: "target" | "brain" | "zap";
+}
+
 export interface Experience {
   id: string;
   company: string;
