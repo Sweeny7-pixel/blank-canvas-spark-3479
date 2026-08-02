@@ -9,6 +9,7 @@ export interface PersonalInfo {
   location: { city: string; country: string };
   website: string;
   email: string;
+  phone?: string;
   avatar: string;
   bio: string;
   skills: string;
@@ -26,27 +27,12 @@ export interface Experience {
   current: boolean;
 }
 
-export interface Writing {
+export interface Certification {
   id: string;
-  title: string;
-  publication: string;
-  date: string;
-  url: string;
-  contributors?: string[];
-  featured: boolean;
-}
-
-export interface Speaking {
-  id: string;
-  event: string;
-  date: string;
-  location: string;
-  talk: string;
-  description?: string;
+  name: string;
+  issuer: string;
+  year: string;
   url?: string;
-  recordingUrl?: string;
-  slidesUrl?: string;
-  upcoming: boolean;
 }
 
 export interface Project {

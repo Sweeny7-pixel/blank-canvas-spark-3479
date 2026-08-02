@@ -1,4 +1,5 @@
-import { personalInfo } from "@/data/portfolio-data";
+import { personalInfo, socialLinks } from "@/data/portfolio-data";
+import resumeAsset from "@/assets/resume.pdf.asset.json";
 
 /**
  * ContactSection Component
@@ -11,36 +12,57 @@ export default function ContactSection() {
         <div className="flex items-center justify-center lg:justify-end lg:pr-16 lg:border-r border-foreground/15">
           <h2 className="text-section">Contact</h2>
         </div>
-        
+
         <div className="flex items-center lg:pl-16">
           <div className="space-y-6">
             <div className="mb-10">
-              <img 
-                src={personalInfo.avatar} 
+              <img
+                src={personalInfo.avatar}
                 alt={personalInfo.name}
-                className="w-48 h-64 object-cover"
+                className="w-48 h-64 object-cover bg-muted"
               />
             </div>
-            
+
             <p className="text-large">{personalInfo.name}</p>
-            
-            <a 
-              href={`mailto:${personalInfo.email}`}
-              className="text-body underline block"
-            >
+
+            <p className="text-body">
+              {personalInfo.location.city}, {personalInfo.location.country}
+            </p>
+
+            <a href={`mailto:${personalInfo.email}`} className="text-body underline block">
               {personalInfo.email}
             </a>
-            
-            {personalInfo.website && (
-              <a 
-                href={`https://${personalInfo.website}`}
+
+            {personalInfo.phone && (
+              <a
+                href={`tel:${personalInfo.phone.replace(/\s/g, "")}`}
+                className="text-body underline block"
+              >
+                {personalInfo.phone}
+              </a>
+            )}
+
+            {socialLinks.map((link) => (
+              <a
+                key={link.platform}
+                href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-body underline block"
               >
-                {personalInfo.website}
+                {link.platform}
               </a>
-            )}
+            ))}
+
+            <div className="pt-4">
+              <a
+                href={resumeAsset.url}
+                download="Sweeny_Santo_Silvester.pdf"
+                className="inline-block border border-foreground/30 px-8 py-3 text-small tracking-widest hover:bg-foreground hover:text-background transition-colors"
+              >
+                Download Resume
+              </a>
+            </div>
           </div>
         </div>
       </div>
