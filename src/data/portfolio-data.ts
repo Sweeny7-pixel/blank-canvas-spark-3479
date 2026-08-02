@@ -10,7 +10,9 @@ import type {
   Education,
   Certification,
   SocialLink,
+  Differentiator,
 } from "@/types/portfolio";
+import profileAsset from "@/assets/profile.png.asset.json";
 
 // ===== Portfolio Data =====
 
@@ -21,7 +23,7 @@ export const personalInfo: PersonalInfo = {
   website: "",
   email: "sweenyjobs076@gmail.com",
   phone: "+91 99620 19091",
-  avatar: "/placeholder.svg",
+  avatar: profileAsset.url,
   bio: "Ex-Salesforce Senior Technical Lead and Consultant transitioning into Product Management, backed by Scrum Master and AI Product Management certifications and end-to-end platform transformations for enterprise healthcare accounts.\n\nI translate complex AI and technical capabilities into business value, build customer adoption roadmaps, and steer cross-functional Agile delivery. Over 12 years of experience managing global teams of 5-20 people and partnering with C-suite executives.\n\nI've led discovery workshops and executive engagements across US healthcare accounts, driving measurable platform adoption, customer retention, and expansion.",
   skills:
     "Agile (Scrum/Kanban), Waterfall, Product Development Lifecycle, Product Strategy & Roadmapping, UX/UI Design Principles, Project Management, Data Analysis & Analytics, User Research & Customer Insights, Problem Solving & Decision Making, Stakeholder Management, Cross-Functional Team Leadership, Backlog & Sprint Management",
@@ -36,6 +38,30 @@ export const personalInfo: PersonalInfo = {
   tagline:
     "Product Manager and ex-Salesforce Senior Technical Lead with 12+ years across enterprise healthcare platforms. I turn complex technical capabilities into business value — outcomes over output, trade-offs over features.",
 };
+
+export const differentiators: Differentiator[] = [
+  {
+    id: "diff-1",
+    title: "Outcomes First",
+    description:
+      "Balanced customer demand against engineering effort to influence roadmap prioritization. Shipped a critical workflow enhancement within 1-2 release cycles, improving adoption from 30% to 60-70%.",
+    icon: "target",
+  },
+  {
+    id: "diff-2",
+    title: "Product Judgment",
+    description:
+      "Lead QA Analyst-turned-PM who understands user pain points and empathy, technical constraints, and business goals. I make informed trade-offs, not compromises.",
+    icon: "brain",
+  },
+  {
+    id: "diff-3",
+    title: "0→1 Execution",
+    description:
+      "Partnered with engineering and product leadership on effort estimation, release planning, and go-to-market for new features and POCs — taking ideas from concept to launch and adoption.",
+    icon: "zap",
+  },
+];
 
 export const experience: Experience[] = [
   {
