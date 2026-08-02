@@ -33,7 +33,7 @@ export const personalInfo: PersonalInfo = {
     "matter to users",
     "scale to millions",
     "solve real problems",
-    "Ships on time, every time",
+    "Ships on time",
   ],
   };
 
