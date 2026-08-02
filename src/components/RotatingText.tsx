@@ -40,7 +40,7 @@ export default function RotatingText({
   return (
     <span className="inline-block" aria-live="polite">
       <span
-        className={`inline-block transition-all duration-400 ease-out ${
+        className={`inline-block transition-all duration-300 ease-out ${
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
         } ${className}`}
       >
