@@ -17,23 +17,23 @@ export default function HeaderSection() {
           <p className="text-tiny tracking-widest">{personalInfo.title}</p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 items-center">
-          <div className="text-center lg:text-right">
-            <h1 className="text-display lg:text-[9rem] leading-none font-light lg:font-normal">{firstName}</h1>
+        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-center">
+          <div className="text-center lg:text-left">
+            <h1 className="text-display lg:text-[7.5rem] leading-[0.95] font-light lg:font-normal">
+              <span className="block">{firstName}</span>
+              <span className="block">{lastName}</span>
+            </h1>
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center lg:justify-end">
             <img
               src={personalInfo.avatar}
               alt={personalInfo.name}
-              className="w-full max-w-[52rem] h-auto aspect-[52/60] object-cover rounded-t-[160px]"
+              className="w-full max-w-[32rem] h-auto aspect-[52/60] object-cover rounded-t-[160px] bg-muted"
             />
           </div>
-
-          <div className="text-center lg:text-left">
-            <h1 className="text-display lg:text-[9rem] leading-none font-light lg:font-normal">{lastName}</h1>
-          </div>
         </div>
+
         
         <div className="text-center mt-16 md:mt-20">
           <p className="text-small">{currentYear}</p>
