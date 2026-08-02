@@ -34,7 +34,9 @@ export const personalInfo: PersonalInfo = {
     "Scale to millions",
     "Ships on time",
   ],
-  };
+  tagline:
+    "Lead QA Analyst turned Product Manager — turning complex AI and platform capabilities into adoption, retention, and measurable business value.",
+};
 
 export const differentiators: Differentiator[] = [
   {
