@@ -106,8 +106,8 @@ export const education: Education[] = [
     institution: "Jaya Institute of Technology",
     degree: "Bachelor of Engineering",
     field: "in Electrical and Electronics",
-    startYear: "",
-    endYear: "",
+    startYear: "2008",
+    endYear: "2012",
     location: "Chennai, India",
   },
 ];
