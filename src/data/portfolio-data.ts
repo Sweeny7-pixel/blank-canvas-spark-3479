@@ -95,6 +95,8 @@ export const projects: Project[] = [
       "An AI fitness coach that tells busy Indians exactly what to do this week and adapts when life gets in the way. It creates adaptive weekly workout and diet plans that adjust to real behavior - missed sessions, real progress, injuries, allergies - instead of static plans that reset to zero.",
     techStack: ["Lovable", "GitHub", "Claude", "ChatGPT"],
     status: "active",
+    githubUrl: "https://github.com/Sweeny7-pixel/habitifyme-forReal",
+    liveUrl: "https://habitifyme.lovable.app/",
   },
 ];
 
