@@ -9,7 +9,7 @@ export default function HeaderSection() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <section className="flex items-center justify-center px-8 md:px-16 lg:px-24 pt-24 pb-20 md:pt-28 md:pb-24">
+    <section className="flex items-center justify-center px-8 md:px-16 lg:px-24 pt-24 pb-20 md:pt-28 md:pb-24 bg-[#141414] text-[oklch(96%_0.01_85)]">
       <div className="w-full max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-center">
           <div className="text-center lg:text-left">
