@@ -31,8 +31,7 @@ export const personalInfo: PersonalInfo = {
   headlinePrefix: "I build products that",
   headlinePhrases: [
     "matter to users",
-    "scale to millions",
-    "solve real problems",
+    "Scale to millions",
     "Ships on time",
   ],
   };
