@@ -18,7 +18,7 @@ import profileAsset from "@/assets/profile.png.asset.json";
 
 export const personalInfo: PersonalInfo = {
   name: "Sweeny Santo Silvester",
-  title: "Product Manager",
+  title: "Product",
   location: { city: "Chennai, Tamil Nadu", country: "India" },
   website: "",
   email: "sweenyjobs076@gmail.com",
@@ -31,9 +31,9 @@ export const personalInfo: PersonalInfo = {
   headlinePrefix: "I build products that",
   headlinePhrases: [
     "matter to users",
+    "scale to millions",
     "solve real problems",
     "Ships on time, every time",
-    "scale to millions",
   ],
   };
 
