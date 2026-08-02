@@ -38,9 +38,6 @@ export default function HeaderSection() {
             />
           </div>
         </div>
-
-        <div className="text-center mt-16 md:mt-20">
-          <p className="text-small">{currentYear}</p>
         </div>
       </div>
     </section>
