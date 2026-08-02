@@ -13,6 +13,10 @@ export interface PersonalInfo {
   avatar: string;
   bio: string;
   skills: string;
+  eyebrow: string;
+  headlinePrefix: string;
+  headlinePhrases: string[];
+  tagline: string;
 }
 
 export interface Experience {
