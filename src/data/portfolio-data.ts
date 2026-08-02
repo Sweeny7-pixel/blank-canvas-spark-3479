@@ -32,12 +32,10 @@ export const personalInfo: PersonalInfo = {
   headlinePhrases: [
     "matter to users",
     "solve real problems",
-    "ship on time",
+    "Ships on time, every time",
     "scale to millions",
   ],
-  tagline:
-    "Product Manager and ex-Salesforce Senior Technical Lead with 12+ years across enterprise healthcare platforms. I turn complex technical capabilities into business value — outcomes over output, trade-offs over features.",
-};
+  };
 
 export const differentiators: Differentiator[] = [
   {
