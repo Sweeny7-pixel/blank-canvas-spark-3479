@@ -6,8 +6,6 @@ import RotatingText from "@/components/RotatingText";
  * Animated headline with rotating phrase, paired with the profile image
  */
 export default function HeaderSection() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <section className="flex items-center justify-center px-8 md:px-16 lg:px-24 pt-24 pb-20 md:pt-28 md:pb-24 bg-[#141414] text-[oklch(96%_0.01_85)]">
       <div className="w-full max-w-7xl">
@@ -37,10 +35,6 @@ export default function HeaderSection() {
               className="w-full max-w-[32rem] h-auto aspect-[52/60] object-cover rounded-t-[160px] bg-muted"
             />
           </div>
-        </div>
-
-        <div className="text-center mt-16 md:mt-20">
-          <p className="text-small">{currentYear}</p>
         </div>
       </div>
     </section>
