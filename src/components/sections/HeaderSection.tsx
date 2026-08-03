@@ -32,7 +32,7 @@ export default function HeaderSection() {
             <img
               src={personalInfo.avatar}
               alt={personalInfo.name}
-              className="w-full max-w-[32rem] h-auto aspect-[52/60] object-cover rounded-t-[160px] bg-muted"
+              className="w-full max-w-[32rem] h-auto aspect-[52/60] object-cover rounded-t-[160px] bg-[#141414]"
             />
           </div>
         </div>
