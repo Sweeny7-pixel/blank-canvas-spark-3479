@@ -13,7 +13,7 @@ export default function HeaderSection() {
       <div className="w-full max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-center">
           <div className="text-center lg:text-left">
-            <span className="inline-block rounded-full border border-foreground/20 px-5 py-2 text-tiny tracking-widest mb-8 md:mb-10">
+            <span className="inline-block rounded-full border border-white/20 px-5 py-2 text-tiny tracking-widest mb-8 md:mb-10">
               {personalInfo.eyebrow}
             </span>
 
@@ -25,7 +25,7 @@ export default function HeaderSection() {
               />
             </h1>
 
-            <p className="text-body leading-relaxed mt-8 md:mt-10 max-w-xl mx-auto lg:mx-0 text-muted-foreground">
+            <p className="text-body leading-relaxed mt-8 md:mt-10 max-w-xl mx-auto lg:mx-0 text-white/60">
               {personalInfo.tagline}
             </p>
           </div>
@@ -38,6 +38,9 @@ export default function HeaderSection() {
             />
           </div>
         </div>
+
+        <div className="text-center mt-16 md:mt-20">
+          <p className="text-small">{currentYear}</p>
         </div>
       </div>
     </section>
