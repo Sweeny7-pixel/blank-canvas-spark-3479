@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import { personalInfo } from "@/data/portfolio-data";
 import RotatingText from "@/components/RotatingText";
 
 /**
  * HeaderSection Component
- * Animated headline with rotating phrase, paired with the profile image
+ * Animated headline with rotating phrase, CTAs and the profile image
  */
 export default function HeaderSection() {
   return (
@@ -23,17 +24,41 @@ export default function HeaderSection() {
               />
             </h1>
 
-            <p className="text-body leading-relaxed mt-8 md:mt-10 max-w-xl mx-auto lg:mx-0 text-white/60">
+            <p className="text-large mt-6 md:mt-8 text-white/80">
+              {personalInfo.taglineTriplet}
+            </p>
+
+            <p className="text-body leading-relaxed mt-6 md:mt-8 max-w-xl mx-auto lg:mx-0 text-white/60">
               {personalInfo.tagline}
             </p>
+
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start mt-10">
+              <Link
+                to="/work"
+                className="inline-block bg-primary text-primary-foreground px-8 py-3 text-small tracking-widest hover:opacity-90 transition-opacity"
+              >
+                View My Work
+              </Link>
+              <Link
+                to="/about"
+                className="inline-block border border-white/30 px-8 py-3 text-small tracking-widest hover:bg-white/10 transition-colors"
+              >
+                About Me
+              </Link>
+            </div>
           </div>
 
           <div className="flex justify-center lg:justify-end">
-            <img
-              src={personalInfo.avatar}
-              alt={personalInfo.name}
-              className="w-full max-w-[32rem] h-auto aspect-[52/60] object-cover bg-[#141414]"
-            />
+            <div className="relative w-full max-w-[32rem]">
+              <img
+                src={personalInfo.avatar}
+                alt={`${personalInfo.name}, ${personalInfo.title}`}
+                className="w-full h-auto aspect-[52/60] object-cover bg-[#141414]"
+              />
+              <span className="absolute bottom-4 left-0 lg:-left-8 bg-background text-foreground px-5 py-3 text-tiny tracking-widest shadow-lg">
+                {personalInfo.credentialBadge}
+              </span>
+            </div>
           </div>
         </div>
       </div>

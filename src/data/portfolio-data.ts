@@ -11,6 +11,8 @@ import type {
   Certification,
   SocialLink,
   Differentiator,
+  UpdateCard,
+  CaseStudy,
 } from "@/types/portfolio";
 import profileAsset from "@/assets/profile.png.asset.json";
 
@@ -36,7 +38,153 @@ export const personalInfo: PersonalInfo = {
   ],
   tagline:
     "Lead QA Analyst turned Product Manager — turning complex AI and platform capabilities into adoption, retention, and measurable business value.",
+  taglineTriplet: "Product thinker. Quality-first builder. Adoption driver.",
+  credentialBadge: "AI-First Product Management · Airtribe",
 };
+
+export const updates: UpdateCard[] = [
+  {
+    id: "update-1",
+    eyebrow: "Featured Case Study",
+    kicker: "Latest deep-dive",
+    title: "Closing the approval-workflow gap in Sales Cloud",
+    description:
+      "How customer discovery surfaced a workflow gap affecting 30%+ of accounts — and how the fix lifted adoption to 60-70%.",
+    linkLabel: "Read case study",
+    href: "/work/iqvia-workflow-adoption",
+    icon: "briefcase",
+  },
+  {
+    id: "update-2",
+    eyebrow: "Currently Building",
+    kicker: "0→1 side project",
+    title: "HabitifyMe — an adaptive AI fitness coach",
+    description:
+      "Weekly workout and diet plans that adapt to real behavior instead of resetting to zero after a missed session.",
+    linkLabel: "See the build",
+    href: "/work/habitifyme",
+    icon: "rocket",
+  },
+  {
+    id: "update-3",
+    eyebrow: "Current Focus",
+    kicker: "What's keeping me busy",
+    title: "AI-first product practice",
+    description:
+      "Applying AI to discovery, user-story generation, and adoption analytics while completing AI-First Product Management at Airtribe.",
+    linkLabel: "About me",
+    href: "/about",
+    icon: "compass",
+  },
+];
+
+export const caseStudies: CaseStudy[] = [
+  {
+    slug: "iqvia-workflow-adoption",
+    title: "Closing the approval-workflow gap in Sales Cloud",
+    subtitle:
+      "Turning a recurring customer complaint into a prioritized release that doubled feature adoption.",
+    role: "Lead QA Analyst / Product Partner, IQVIA",
+    timeframe: "2019 — Present",
+    summary:
+      "TODO: Write a 3-4 sentence overview of the story — the account context, the gap you found, what you pitched, and the result.",
+    metrics: [
+      { label: "Adoption", value: "30% → 60-70%" },
+      { label: "Release cycles to ship", value: "1-2" },
+      { label: "Renewals influenced", value: "$2M" },
+    ],
+    sections: [
+      {
+        heading: "Context",
+        body: [
+          "TODO: Describe the product, the customer segment, and your role on the team.",
+        ],
+      },
+      {
+        heading: "Problem",
+        body: [
+          "TODO: What was breaking for users? Quantify the pain and who felt it.",
+        ],
+      },
+      {
+        heading: "Research",
+        body: [
+          "TODO: Discovery workshops with 5-10 enterprise and mid-market users — what you asked, what patterns emerged.",
+        ],
+      },
+      {
+        heading: "Approach",
+        body: [
+          "TODO: The solution you proposed and how you framed it for product leadership.",
+        ],
+      },
+      {
+        heading: "Decisions & trade-offs",
+        body: [
+          "TODO: What you cut, deferred, or simplified to fit engineering effort and the release window.",
+        ],
+      },
+      {
+        heading: "Outcome",
+        body: [
+          "TODO: Adoption movement, retention/expansion impact, and how you measured it.",
+        ],
+      },
+      {
+        heading: "What I'd do next",
+        body: [
+          "TODO: The follow-on bets you'd make with more time or data.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "habitifyme",
+    title: "HabitifyMe — an adaptive AI fitness coach",
+    subtitle:
+      "A 0→1 build for busy Indians: plans that adjust to missed sessions, injuries, and real progress.",
+    role: "Solo product & build",
+    timeframe: "2026",
+    summary:
+      "TODO: Write a 3-4 sentence overview — who it's for, the insight behind it, and where it stands today.",
+    metrics: [
+      { label: "Stage", value: "Live prototype" },
+      { label: "Built with", value: "Lovable, Claude, ChatGPT" },
+      { label: "Users", value: "TODO" },
+    ],
+    sections: [
+      {
+        heading: "Context",
+        body: ["TODO: Why you started this and who you built it for."],
+      },
+      {
+        heading: "Problem",
+        body: ["TODO: The failure mode of static plans and what it costs users."],
+      },
+      {
+        heading: "Research",
+        body: ["TODO: Conversations, surveys, or your own behavior data."],
+      },
+      {
+        heading: "Approach",
+        body: ["TODO: How the adaptive plan engine works at a product level."],
+      },
+      {
+        heading: "Decisions & trade-offs",
+        body: ["TODO: Scope calls made to get to a usable v1."],
+      },
+      {
+        heading: "Outcome",
+        body: ["TODO: What you learned and any early usage signals."],
+      },
+      {
+        heading: "What I'd do next",
+        body: ["TODO: The next iteration you'd ship."],
+      },
+    ],
+  },
+];
+
 
 export const differentiators: Differentiator[] = [
   {

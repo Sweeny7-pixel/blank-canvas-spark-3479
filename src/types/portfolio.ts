@@ -17,6 +17,10 @@ export interface PersonalInfo {
   headlinePrefix: string;
   headlinePhrases: string[];
   tagline: string;
+  /** Short "Product thinker. Storyteller." style triplet shown under the headline */
+  taglineTriplet: string;
+  /** Floating credential badge pinned to the hero photo */
+  credentialBadge: string;
 }
 
 export interface Differentiator {
@@ -24,6 +28,39 @@ export interface Differentiator {
   title: string;
   description: string;
   icon: "target" | "brain" | "zap";
+}
+
+export interface UpdateCard {
+  id: string;
+  eyebrow: string;
+  kicker: string;
+  title: string;
+  description: string;
+  linkLabel: string;
+  /** Internal route (e.g. /work) or absolute URL */
+  href: string;
+  icon: "briefcase" | "rocket" | "compass";
+}
+
+export interface CaseStudySection {
+  heading: string;
+  body: string[];
+}
+
+export interface CaseStudyMetric {
+  label: string;
+  value: string;
+}
+
+export interface CaseStudy {
+  slug: string;
+  title: string;
+  subtitle: string;
+  role: string;
+  timeframe: string;
+  summary: string;
+  metrics: CaseStudyMetric[];
+  sections: CaseStudySection[];
 }
 
 export interface Experience {
