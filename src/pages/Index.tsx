@@ -1,29 +1,37 @@
 import Layout from "@/components/Layout";
 import Navigation from "@/components/Navigation";
+import PageMeta from "@/components/PageMeta";
 import HeaderSection from "@/components/sections/HeaderSection";
-import AboutSection from "@/components/sections/AboutSection";
 import DifferentiatorsSection from "@/components/sections/DifferentiatorsSection";
-import WorkSection from "@/components/sections/WorkSection";
-import ProjectsSection from "@/components/sections/ProjectsSection";
-import EducationSection from "@/components/sections/EducationSection";
-import SkillsSection from "@/components/sections/SkillsSection";
-import ContactSection from "@/components/sections/ContactSection";
-import { useActiveSection } from "@/hooks/useActiveSection";
+import UpdatesSection from "@/components/sections/UpdatesSection";
+import { Link } from "react-router-dom";
 
 export default function Index() {
-  useActiveSection(100);
   return (
     <Layout>
+      <PageMeta
+        title="Sweeny Santo Silvester — Product Manager"
+        description="Lead QA Analyst turned Product Manager. 12+ years in enterprise platforms, Agile delivery, and customer adoption roadmaps."
+        canonicalPath="/"
+      />
       <Navigation />
       <HeaderSection />
-      <AboutSection />
       <DifferentiatorsSection />
-      <WorkSection />
-      <ProjectsSection />
-      <EducationSection />
+      <UpdatesSection />
 
-      <SkillsSection />
-      <ContactSection />
+      <section className="px-8 md:px-16 lg:px-24 pb-8">
+        <div className="max-w-6xl mx-auto text-center space-y-8">
+          <p className="text-body text-muted-foreground max-w-2xl mx-auto">
+            Case studies, roles, and side projects live on the Work page.
+          </p>
+          <Link
+            to="/work"
+            className="inline-block border border-foreground/30 px-8 py-3 text-small tracking-widest hover:bg-foreground hover:text-background transition-colors"
+          >
+            Explore my work
+          </Link>
+        </div>
+      </section>
     </Layout>
   );
 }
