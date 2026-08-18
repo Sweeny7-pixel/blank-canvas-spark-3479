@@ -19,7 +19,7 @@ export default function ContactSection() {
               <img
                 src={personalInfo.avatar}
                 alt={personalInfo.name}
-                className="w-48 h-64 object-cover bg-muted"
+                className="w-48 h-64 object-cover bg-card"
               />
             </div>
 
@@ -58,7 +58,7 @@ export default function ContactSection() {
               <a
                 href={resumeAsset.url}
                 download="Sweeny_Santo_Silvester.pdf"
-                className="inline-block border border-foreground/30 px-8 py-3 text-small tracking-widest hover:bg-foreground hover:text-background transition-colors"
+                className="inline-block border border-foreground/40 px-8 py-3 text-small tracking-widest hover:bg-primary hover:border-primary hover:text-primary-foreground transition-colors"
               >
                 Download Resume
               </a>

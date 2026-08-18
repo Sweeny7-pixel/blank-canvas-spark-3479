@@ -1,28 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-  /* Minimal Color Palette */
-  --color-background: oklch(96% 0.01 85);
-  --color-foreground: oklch(65% 0.24 30);
-  --color-muted: oklch(56% 0 0);
-  --color-muted-foreground: oklch(50% 0 0);
-  --color-border: oklch(90% 0.01 85);
+  /* Dark Palette — black canvas, white type, orange accent */
+  --color-background: oklch(14% 0 0);
+  --color-foreground: oklch(96% 0.005 85);
+  --color-muted: oklch(24% 0 0);
+  --color-muted-foreground: oklch(72% 0.01 85);
+  --color-border: oklch(30% 0 0);
 
-  /* Minimal semantic colors for compatibility */
-  --color-primary: oklch(65% 0.24 30);
-  --color-primary-foreground: oklch(96% 0.01 85);
-  --color-secondary: oklch(92% 0.01 85);
-  --color-secondary-foreground: oklch(65% 0.24 30);
-  --color-accent: oklch(96% 0 0);
-  --color-accent-foreground: oklch(21% 0 0);
+  --color-primary: oklch(70% 0.19 45);
+  --color-primary-foreground: oklch(14% 0 0);
+  --color-secondary: oklch(20% 0 0);
+  --color-secondary-foreground: oklch(96% 0.005 85);
+  --color-accent: oklch(22% 0 0);
+  --color-accent-foreground: oklch(96% 0.005 85);
   --color-destructive: oklch(58% 0.22 29);
-  --color-destructive-foreground: oklch(100% 0 0);
-  --color-card: oklch(100% 0 0);
-  --color-card-foreground: oklch(21% 0 0);
-  --color-popover: oklch(100% 0 0);
-  --color-popover-foreground: oklch(21% 0 0);
-  --color-input: oklch(90% 0 0);
-  --color-ring: oklch(21% 0 0);
+  --color-destructive-foreground: oklch(98% 0 0);
+  --color-card: oklch(17% 0 0);
+  --color-card-foreground: oklch(96% 0.005 85);
+  --color-popover: oklch(17% 0 0);
+  --color-popover-foreground: oklch(96% 0.005 85);
+  --color-input: oklch(30% 0 0);
+  --color-ring: oklch(70% 0.19 45);
 
   /* Border Radius */
   --radius-sm: 0.25rem;
@@ -77,8 +76,8 @@
 
 @layer base {
   body {
-    background-color: oklch(96% 0.01 85);
-    color: oklch(65% 0.24 30);
+    background-color: oklch(14% 0 0);
+    color: oklch(96% 0.005 85);
     font-family: var(--font-family-serif);
     font-size: var(--text-body);
     line-height: var(--text-body--line-height);
