@@ -26,7 +26,28 @@ export const personalInfo: PersonalInfo = {
   email: "sweenyjobs076@gmail.com",
   phone: "+91 99620 19091",
   avatar: profileAsset.url,
-  bio: "Ex-Salesforce Senior Technical Lead and Consultant transitioning into Product Management, backed by Scrum Master and AI Product Management certifications and end-to-end platform transformations for enterprise healthcare accounts.\n\nI translate complex AI and technical capabilities into business value, build customer adoption roadmaps, and steer cross-functional Agile delivery. Over 12 years of experience managing global teams of 5-20 people and partnering with C-suite executives.\n\nI've led discovery workshops and executive engagements across US healthcare accounts, driving measurable platform adoption, customer retention, and expansion.",
+  bio: "Enterprise SaaS Product Leader in Transition | 12+ Years Driving Adoption & Customer Success
+Lead QA Analyst turning Product Manager—combining technical rigor with customer obsession to solve enterprise problems.\n\n Product work & impact: \n\n 
+Increased Sales Cloud adoption from 30% to 65% by evaluating customer demand against engineering tradeoffs and owning feature prioritization end-to-end \n\n 
+
+Reduced onboarding friction from 3 months to 2 weeks through product strategy that accelerated time-to-value—directly supporting $2M+ in contract renewals and expansion  \n\n 
+
+Delivered feature releases and POCs by aligning engineering, sales, and customer stakeholders around shared roadmap priorities \n\n 
+
+Drove platform reliability improvements that reduced SLA breaches by 30% and influenced 10+ product enhancements based on customer pain points \n\n 
+
+
+Built adoption strategies across 10+ US healthcare accounts—translating technical constraints into user-centric solutions \n\n 
+
+How I think as a PM: \n\n 
+
+I lead discovery from the customer backward. My QA and technical background means I understand what customers actually struggle with—not what they say they want. I obsess over reducing friction in every workflow, connect the dots between customer problems and business outcomes, and translate ambiguity into actionable requirements. I rally engineering and customer-facing teams around a shared vision, then relentlessly own execution clarity.\n\n 
+ 
+What I'm targeting:\n\n 
+ Product Manager or Senior Product Manager roles in enterprise B2B SaaS—particularly technical platforms, healthcare, or complex SaaS contexts where deep customer empathy, stakeholder alignment, and data-driven prioritization drive impact. \n\n 
+ 
+Proof of commitment:\n\n 
+Recently completed AI-First Product Management certification and earned Certified Scrum Product Owner (CSPO)—formalized what I've been doing operationally for years.",
   skills:
     "Agile (Scrum/Kanban), Waterfall, Product Development Lifecycle, Product Strategy & Roadmapping, UX/UI Design Principles, Project Management, Data Analysis & Analytics, User Research & Customer Insights, Problem Solving & Decision Making, Stakeholder Management, Cross-Functional Team Leadership, Backlog & Sprint Management",
   eyebrow: "Lead QA Analyst → PM",
@@ -39,7 +60,7 @@ export const personalInfo: PersonalInfo = {
   tagline:
     "Lead QA Analyst turned Product Manager — turning complex AI and platform capabilities into adoption, retention, and measurable business value.",
   taglineTriplet: "Product thinker. Quality-first builder. Adoption driver.",
-  credentialBadge: "AI-First Product Management · Airtribe",
+  credentialBadge: "CSPO",
 };
 
 export const updates: UpdateCard[] = [
