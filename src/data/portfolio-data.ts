@@ -262,10 +262,18 @@ export const education: Education[] = [
 
 export const certifications: Certification[] = [
   {
-    id: "cert-1",
+    id: "cert-2",
+    name: "Certified Scrum Product Owner®",
+    issuer: "Scrum Alliance",
+    year: "2026",
+    Link: "https://certification.scrumalliance.org/accounts/1843190-sweeny-santo/certifications/2209942-cspo",
+  },
+  {
+    id: "cert-2",
     name: "AI-First Product Management",
     issuer: "Airtribe",
     year: "2026",
+    Link:"https://www.airtribe.live/product-management/certificate/H8GKO5V0CMTC",
   },
 ];
 
