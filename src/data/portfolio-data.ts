@@ -262,7 +262,7 @@ export const education: Education[] = [
 
 export const certifications: Certification[] = [
   {
-    id: "cert-2",
+    id: "cert-1",
     name: "Certified Scrum Product Owner®",
     issuer: "Scrum Alliance",
     year: "2026",

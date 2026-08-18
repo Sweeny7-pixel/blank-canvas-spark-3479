@@ -33,9 +33,9 @@ export default function EducationSection() {
                     {cert.name}, {cert.issuer}
                   </p>
                   <p className="text-small">{cert.year}</p>
-                  {cert.url && (
+                  {(cert.liveUrl || cert.url) && (
                     <a
-                      href={cert.url}
+                      href={cert.liveUrl || cert.url}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-body underline block"
