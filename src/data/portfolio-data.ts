@@ -26,33 +26,7 @@ export const personalInfo: PersonalInfo = {
   email: "sweenyjobs076@gmail.com",
   phone: "+91 99620 19091",
   avatar: profileAsset.url,
-  bio: "Enterprise SaaS Product Leader in Transition | 12+ Years Driving Adoption & Customer Success
-
-Lead QA Analyst turning Product Manager—combining technical rigor with customer obsession to solve enterprise problems.
-
-Product work & impact:
-
-Increased Sales Cloud adoption from 30% to 65% by evaluating customer demand against engineering tradeoffs and owning feature prioritization end-to-end.
-
-Reduced onboarding friction from 3 months to 2 weeks through product strategy that accelerated time-to-value—directly supporting $2M+ in contract renewals and expansion.
-
-Delivered feature releases and POCs by aligning engineering, sales, and customer stakeholders around shared roadmap priorities.
-
-Drove platform reliability improvements that reduced SLA breaches by 30% and influenced 10+ product enhancements based on customer pain points.
-
-Built adoption strategies across 10+ US healthcare accounts—translating technical constraints into user-centric solutions.
-
-How I think as a PM:
-
-I lead discovery from the customer backward. My QA and technical background means I understand what customers actually struggle with—not what they say they want. I obsess over reducing friction in every workflow, connect the dots between customer problems and business outcomes, and translate ambiguity into actionable requirements. I rally engineering and customer-facing teams around a shared vision, then relentlessly own execution clarity.
-
-What I'm targeting:
-
-Product Manager or Senior Product Manager roles in enterprise B2B SaaS—particularly technical platforms, healthcare, or complex SaaS contexts where deep customer empathy, stakeholder alignment, and data-driven prioritization drive impact.
-
-Proof of commitment:
-
-Recently completed AI-First Product Management certification and earned Certified Scrum Product Owner (CSPO)—formalizing what I have been doing operationally for years.",
+  bio: "Enterprise SaaS Product Leader in Transition | 12+ Years Driving Adoption & Customer Success\n\nLead QA Analyst turning Product Manager—combining technical rigor with customer obsession to solve enterprise problems.\n\nProduct work & impact:\n\nIncreased Sales Cloud adoption from 30% to 65% by evaluating customer demand against engineering tradeoffs and owning feature prioritization end-to-end.\n\nReduced onboarding friction from 3 months to 2 weeks through product strategy that accelerated time-to-value—directly supporting $2M+ in contract renewals and expansion.\n\nDelivered feature releases and POCs by aligning engineering, sales, and customer stakeholders around shared roadmap priorities.\n\nDrove platform reliability improvements that reduced SLA breaches by 30% and influenced 10+ product enhancements based on customer pain points.\n\nBuilt adoption strategies across 10+ US healthcare accounts—translating technical constraints into user-centric solutions.\n\nHow I think as a PM:\n\nI lead discovery from the customer backward. My QA and technical background means I understand what customers actually struggle with—not what they say they want. I obsess over reducing friction in every workflow, connect the dots between customer problems and business outcomes, and translate ambiguity into actionable requirements. I rally engineering and customer-facing teams around a shared vision, then relentlessly own execution clarity.\n\nWhat I'm targeting:\n\nProduct Manager or Senior Product Manager roles in enterprise B2B SaaS—particularly technical platforms, healthcare, or complex SaaS contexts where deep customer empathy, stakeholder alignment, and data-driven prioritization drive impact.\n\nProof of commitment:\n\nRecently completed AI-First Product Management certification and earned Certified Scrum Product Owner (CSPO)—formalizing what I have been doing operationally for years.",
   skills:
     "Agile (Scrum/Kanban), Waterfall, Product Development Lifecycle, Product Strategy & Roadmapping, UX/UI Design Principles, Project Management, Data Analysis & Analytics, User Research & Customer Insights, Problem Solving & Decision Making, Stakeholder Management, Cross-Functional Team Leadership, Backlog & Sprint Management",
   eyebrow: "Lead QA Analyst → PM",
