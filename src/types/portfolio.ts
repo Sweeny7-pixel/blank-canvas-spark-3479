@@ -81,6 +81,8 @@ export interface Certification {
   issuer: string;
   year: string;
   url?: string;
+  /** Public verification/certificate link */
+  liveUrl?: string;
 }
 
 export interface Project {
