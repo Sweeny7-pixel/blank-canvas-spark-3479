@@ -26,7 +26,7 @@ export default function Index() {
           </p>
           <Link
             to="/work"
-            className="inline-block border border-foreground/30 px-8 py-3 text-small tracking-widest hover:bg-foreground hover:text-background transition-colors"
+            className="inline-block border border-foreground/40 px-8 py-3 text-small tracking-widest hover:bg-primary hover:border-primary hover:text-primary-foreground transition-colors"
           >
             Explore my work
           </Link>

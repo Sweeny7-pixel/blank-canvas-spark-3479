@@ -8,11 +8,11 @@ import RotatingText from "@/components/RotatingText";
  */
 export default function HeaderSection() {
   return (
-    <section className="flex items-center justify-center px-8 md:px-16 lg:px-24 pt-24 pb-20 md:pt-28 md:pb-24 bg-[#141414] text-[oklch(96%_0.01_85)]">
+    <section className="flex items-center justify-center px-8 md:px-16 lg:px-24 pt-24 pb-20 md:pt-28 md:pb-24 bg-background text-foreground">
       <div className="w-full max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-center">
           <div className="text-center lg:text-left">
-            <span className="inline-block rounded-full border border-white/20 px-5 py-2 text-tiny tracking-widest mb-8 md:mb-10">
+            <span className="inline-block rounded-full border border-border px-5 py-2 text-tiny tracking-widest mb-8 md:mb-10">
               {personalInfo.eyebrow}
             </span>
 
@@ -24,11 +24,11 @@ export default function HeaderSection() {
               />
             </h1>
 
-            <p className="text-large mt-6 md:mt-8 text-white/80">
+            <p className="text-large mt-6 md:mt-8 text-foreground">
               {personalInfo.taglineTriplet}
             </p>
 
-            <p className="text-body leading-relaxed mt-6 md:mt-8 max-w-xl mx-auto lg:mx-0 text-white/60">
+            <p className="text-body leading-relaxed mt-6 md:mt-8 max-w-xl mx-auto lg:mx-0 text-muted-foreground">
               {personalInfo.tagline}
             </p>
 
@@ -41,7 +41,7 @@ export default function HeaderSection() {
               </Link>
               <Link
                 to="/about"
-                className="inline-block border border-white/30 px-8 py-3 text-small tracking-widest hover:bg-white/10 transition-colors"
+                className="inline-block border border-foreground/40 px-8 py-3 text-small tracking-widest hover:border-primary hover:text-primary transition-colors"
               >
                 About Me
               </Link>
@@ -53,9 +53,9 @@ export default function HeaderSection() {
               <img
                 src={personalInfo.avatar}
                 alt={`${personalInfo.name}, ${personalInfo.title}`}
-                className="w-full h-auto aspect-[52/60] object-cover bg-[#141414]"
+                className="w-full h-auto aspect-[52/60] object-cover bg-background"
               />
-              <span className="absolute bottom-4 left-0 lg:-left-8 bg-background text-foreground px-5 py-3 text-tiny tracking-widest shadow-lg">
+              <span className="absolute bottom-4 left-0 lg:-left-8 bg-primary text-primary-foreground px-5 py-3 text-tiny tracking-widest shadow-lg">
                 {personalInfo.credentialBadge}
               </span>
             </div>
