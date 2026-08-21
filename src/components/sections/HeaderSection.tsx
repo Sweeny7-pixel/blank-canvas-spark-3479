@@ -55,7 +55,7 @@ export default function HeaderSection() {
                 alt={`${personalInfo.name}, ${personalInfo.title}`}
                 className="w-full h-auto aspect-[52/60] object-cover bg-background"
               />
-              <span className="absolute bottom-4 left-0 lg:-left-8 bg-primary text-primary-foreground px-5 py-3 text-tiny tracking-widest shadow-lg">
+              <span className="absolute bottom-4 right-0 lg:-right-8 rounded-full bg-primary text-primary-foreground px-5 py-3 text-tiny tracking-widest shadow-lg">
                 {personalInfo.credentialBadge}
               </span>
             </div>
