@@ -146,40 +146,40 @@ export const caseStudies: CaseStudy[] = [
     role: "Solo product & build",
     timeframe: "2026",
     summary:
-      "TODO: Write a 3-4 sentence overview — who it's for, the insight behind it, and where it stands today.",
+      "HabitifyMe is an AI fitness coach for busy Indian professionals (22–35) who've joined a gym before but repeatedly quit or restarted. It generates adaptive weekly workout and Indian-diet plans that adjust to real behavior — missed sessions, injuries, allergies — instead of static plans that reset to zero. Shipped through V1–V3 (onboarding, adaptive planning, India-friendly diet, and a Habit Formation Engine with XP/streaks/achievements), with a defined V4 roadmap and a GTM plan targeting local gyms and fitness communities.",
     metrics: [
       { label: "Stage", value: "Live prototype" },
       { label: "Built with", value: "Lovable, Claude, ChatGPT" },
-      { label: "Users", value: "TODO" },
+      { label: "Users", value: "30+" },
     ],
     sections: [
       {
         heading: "Context",
-        body: ["TODO: Why you started this and who you built it for."],
+        body: ["Target user: young Indian professionals who've restarted their gym routine 3+ times, relying on YouTube, friends, or generic fitness apps for guidance. Persona: Arjun, 26, Bengaluru IT professional — high intent, low consistency, quits after 3–4 weeks when work piles up."],
       },
       {
         heading: "Problem",
-        body: ["TODO: The failure mode of static plans and what it costs users."],
+        body: ["Existing fitness apps fail this user for four reasons: they're too complicated (excessive tracking/logging), plans don't reflect Indian eating habits, plans don't adapt when users skip workouts, and key features sit behind paywalls. The core pattern: users need consistency, not more information, and current tools don't help them build the habit."],
       },
       {
         heading: "Research",
-        body: ["TODO: Conversations, surveys, or your own behavior data."],
+        body: ["13 user interviews surfaced three key insights: the "foreign food" problem (11 of 13 eat roti/dal/curd, not whey shakes) kills diet adherence faster than workout difficulty; gap detection — resuming vs. resetting after a missed day — is the core retention mechanic, not a nice-to-have, since users explicitly quit apps whose plans don't react to skipped days; and form anxiety is silent but near-universal (9 of 13 admitted copying others at the gym while unsure of correct form), making demo videos an affordable substitute for a personal trainer."],
       },
       {
         heading: "Approach",
-        body: ["TODO: How the adaptive plan engine works at a product level."],
+        body: ["Built in three shipped phases: \n\n V1 — 10-field onboarding, a pre-filtered real exercise catalog (equipment/level/injury-mapped before the LLM sees anything, capped at 120 exercises), and a home dashboard with weekly review driving adaptive next-week generation. \n\n V2 — prompt-driven custom plans with a no-fabrication rule, 5-tab mobile navigation, a combined calendar view, 7-day India-friendly diet, and allergy-aware substitution. \n\n V3 (Habit Formation Engine) — a Trigger → Action → Reward → Investment → Repeat loop: one-tap check-in decoupled from full logging, a weekly (not global) streak count, an XP/level system with visible earn-rules, diet-logging XP, and a 12-badge achievement grid shown greyed-out rather than hidden."],
       },
       {
         heading: "Decisions & trade-offs",
-        body: ["TODO: Scope calls made to get to a usable v1."],
+        body: ["Several deliberate constraints: exercises are limited to a pre-filtered, verified catalog rather than open LLM generation, trading creative variety for guaranteed images/instructions and injury safety. Check-in was decoupled from full workout logging so low-effort days still feed the reward loop — rejecting the stricter 'only count a full log' option because it would punish exactly the low-motivation days the habit loop exists to rescue. Achievement badges are always visible (locked/greyed) rather than hidden-until-earned, trading surprise for a clear goal ladder suited to a beginner-heavy, restart-prone audience. Notification failures are surfaced explicitly rather than failing silently, since a silent block quietly breaks the entire trigger mechanism. Diet plans are generated weekly, not daily, trading some freshness for lower cost/latency and predictability."],
       },
       {
         heading: "Outcome",
-        body: ["TODO: What you learned and any early usage signals."],
+        body: ["V1–V3 features are shipped and live (habitifyme.lovable.app), including the full check-in/XP/achievement loop. Several V3 habit-engine components remain partial — Habit Score composite, automated user segmentation/tier unlocks, Sunday Planning prompts, recovery flow for inactivity, and confirmed surprise-reward animations are defined but not yet wired to the UI. GTM is still at the validation stage, with a hypothesis (≥50% of signups from local/apartment gyms and fitness WhatsApp groups complete activation) and projected — not actual — funnel targets (100 gym members reached → 10 active after 7 days)."],
       },
       {
         heading: "What I'd do next",
-        body: ["TODO: The next iteration you'd ship."],
+        body: ["Close the partial V3 scope first — specifically the Habit Score and automated segmentation, since those are what turn XP data into a proactive retention signal rather than a passive display. Then validate the GTM hypothesis with real pilot data before investing in V4 (offline support, per-user timezone push scheduling, social/streak sharing). Longer-term, address the stated lowest-confidence risk: layering trainer-reviewed workout templates on top of AI-generated plans to catch mobility limitations and injury severity the AI can't fully assess alone."],
       },
     ],
   },
