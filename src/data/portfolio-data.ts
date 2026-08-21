@@ -163,7 +163,7 @@ export const caseStudies: CaseStudy[] = [
       },
       {
         heading: "Research",
-        body: ["13 user interviews surfaced three key insights: the "foreign food" problem (11 of 13 eat roti/dal/curd, not whey shakes) kills diet adherence faster than workout difficulty; gap detection — resuming vs. resetting after a missed day — is the core retention mechanic, not a nice-to-have, since users explicitly quit apps whose plans don't react to skipped days; and form anxiety is silent but near-universal (9 of 13 admitted copying others at the gym while unsure of correct form), making demo videos an affordable substitute for a personal trainer."],
+        body: ["13 user interviews surfaced three key insights: the \"foreign food\" problem (11 of 13 eat roti/dal/curd, not whey shakes) kills diet adherence faster than workout difficulty; gap detection — resuming vs. resetting after a missed day — is the core retention mechanic, not a nice-to-have, since users explicitly quit apps whose plans don't react to skipped days; and form anxiety is silent but near-universal (9 of 13 admitted copying others at the gym while unsure of correct form), making demo videos an affordable substitute for a personal trainer."],
       },
       {
         heading: "Approach",
