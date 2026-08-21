@@ -87,7 +87,7 @@ export const caseStudies: CaseStudy[] = [
     role: "Lead QA Analyst / Product Partner, IQVIA",
     timeframe: "2019 — Present",
     summary:
-      "TODO: Write a 3-4 sentence overview of the story — the account context, the gap you found, what you pitched, and the result.",
+      "Redesigned client onboarding for a global Healthcare/Life Sciences Salesforce Sales Cloud deployment (5,000+ users), cutting time-to-go-live from 8–10 weeks to 1 week (89% faster) by building a reusable, standard-platform accelerator for the speaker-event management lifecycle. One build now serves 4 client engagements, recovering ~32 weeks of consulting capacity and an estimated $2.68M+ in annual adoption ROI.",
     metrics: [
       { label: "Adoption", value: "30% → 60-70%" },
       { label: "Release cycles to ship", value: "1-2" },
@@ -97,43 +97,43 @@ export const caseStudies: CaseStudy[] = [
       {
         heading: "Context",
         body: [
-          "TODO: Describe the product, the customer segment, and your role on the team.",
+          "A leading Healthcare/Life Sciences org had Salesforce as its platform of record across 5,000+ global users. Their core commercial process — managing speaker events, from scheduling and engagement through honoraria payment and expense settlement — sat on this platform, but every new client onboarding meant rebuilding the same configuration from scratch.",
         ],
       },
       {
         heading: "Problem",
         body: [
-          "TODO: What was breaking for users? Quantify the pain and who felt it.",
+          "Each client engagement required 8–10 weeks of setup before reps could work in the system. That cost ~40 weeks of senior consulting time per year, with a 0% reuse rate across engagements. Financial settlements (honoraria, reimbursements) were handled manually in spreadsheets outside Salesforce — creating compliance risk and no audit trail. Poor UX led reps to abandon the platform for manual workarounds.",
         ],
       },
       {
         heading: "Research",
         body: [
-          "TODO: Discovery workshops with 5-10 enterprise and mid-market users — what you asked, what patterns emerged.",
+          "Root-cause analysis surfaced four compounding issues: no standard, repeatable workflow existed for the event lifecycle; the out-of-box platform didn't match how commercial teams actually worked, so reps avoided it; financial processes lived off-platform in spreadsheets; and nothing built for one client was ever captured or reused for the next.",
         ],
       },
       {
         heading: "Approach",
         body: [
-          "TODO: The solution you proposed and how you framed it for product leadership.",
+          "Designed and delivered two end-to-end business process flows entirely within standard Salesforce capabilities — no custom development, no technical debt: \n\n Process 1 (Event Creation → Submission): event initiation, speaker engagement, budget approval workflow, compliance sign-off, real-time stakeholder visibility. \n\n Process 2 (Event Closure → Financial Settlement): outcome capture, in-platform honoraria calculation and invoicing, digital expense submission, payment tracking, closed audit record.",
         ],
       },
       {
         heading: "Decisions & trade-offs",
         body: [
-          "TODO: What you cut, deferred, or simplified to fit engineering effort and the release window.",
+          "Deliberately constrained the build to standard/declarative Salesforce features rather than custom code — trading some flexibility for zero technical debt and immediate reusability across future clients. This made the accelerator a durable commercial asset rather than a one-off client build.",
         ],
       },
       {
         heading: "Outcome",
         body: [
-          "TODO: Adoption movement, retention/expansion impact, and how you measured it.",
+          "Onboarding time: 8–10 weeks → 1 week (89% faster) \n\n Reuse: 1 build → 4 client deployments (4×) \n\n Capacity recovered: ~32 weeks/year of senior consulting time \n\n Financial settlements: 100% moved on-platform (from fully manual) \n\n Modeled adoption ROI: ~$2.68M/year in rep productivity recovered + $108K/year in payment-processing savings across 4 clients, plus elimination of Sunshine Act compliance exposure from unaudited speaker payments",
         ],
       },
       {
         heading: "What I'd do next",
         body: [
-          "TODO: The follow-on bets you'd make with more time or data.",
+          "Extend the accelerator into a formal reusable framework (versioned baseline + configuration guide) so clients can self-serve further customization without specialist dependency, and instrument usage analytics to quantify adoption depth per client, not just deployment count — turning '4 clients onboarded' into a measurable adoption curve.",
         ],
       },
     ],
