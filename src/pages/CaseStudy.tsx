@@ -75,11 +75,36 @@ export default function CaseStudy() {
             {study.sections.map((section) => (
               <section key={section.heading} className="space-y-5">
                 <h2 className="text-large leading-tight">{section.heading}</h2>
-                {section.body.map((paragraph, i) => (
-                  <p key={i} className="text-body leading-relaxed text-muted-foreground">
-                    {paragraph}
-                  </p>
-                ))}
+                {section.body.map((paragraph, i) => {
+                  const items = paragraph
+                    .split(/\n\s*\n/)
+                    .map((part) => part.trim())
+                    .filter(Boolean);
+
+                  if (items.length > 1) {
+                    return (
+                      <ul key={i} className="space-y-3">
+                        {items.map((item, j) => (
+                          <li key={j} className="flex gap-4">
+                            <span
+                              aria-hidden="true"
+                              className="mt-[0.55rem] h-2 w-2 shrink-0 rounded-full bg-primary"
+                            />
+                            <span className="text-body leading-relaxed text-muted-foreground">
+                              {item}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    );
+                  }
+
+                  return (
+                    <p key={i} className="text-body leading-relaxed text-muted-foreground">
+                      {paragraph}
+                    </p>
+                  );
+                })}
               </section>
             ))}
           </div>
