@@ -183,6 +183,59 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
   },
+  {
+    slug: "parksmart-google-maps",
+    title: "ParkSmart: Parking Discovery Research for Google Maps",
+    subtitle:
+      "Why Google Maps should move parking from 'where is a spot' to 'how safe, reliable and likely is it.'",
+    role: "Product Manager (solo)",
+    timeframe: "March 2026",
+    summary:
+      "A research-led case study on urban parking in India, owned end to end: framing the problem, sizing the market, mapping 7 user segments and their existing alternatives, running 5 user interviews and distilling them into personas, then synthesizing 3 strategic directions and prioritizing 3 product recommendations for Google Maps. The core shift: treat parking as a service-level promise (safety, shade, reliability), not just a pin on a map.",
+    metrics: [
+      { label: "India parking mgmt market", value: "$94.1M → $322M (2025–2033)" },
+      { label: "Urban congestion from parking search", value: "~30%" },
+      { label: "Interviews → personas", value: "5" },
+    ],
+    sections: [
+      {
+        heading: "Context",
+        body: [
+          "India's parking-management market is projected to grow from $94.1M in 2025 to $322M by 2033 (17.8% CAGR), with parking-systems hardware at roughly $700M (a different scope). Yet about 30% of urban congestion is attributed to drivers searching for parking. Google Maps already shows where parking is. The discovery question was what drivers need to know about a spot beyond its location.",
+        ],
+      },
+      {
+        heading: "Problem",
+        body: [
+          "Today's alternatives (free government reserved spots, unknown paid parking, hotel or restaurant valet, other apps like Waze, mall parking, local guards) all force users to gamble on time, safety and vehicle condition: availability is unreliable, there is no shade or security data, and compliance risk is high. \n\n I mapped 7 user segments with distinct pains: daily car commuters (waiting times), 2W commuters (towing risk, low visibility), delivery partners (no unloading zones, fines), EV owners (ICE-blocked bays, offline chargers), occasional visitors (unreliable spots, anxiety), tourist buses and vans (obstruction, blocked access), and apartment and society visitors (no dedicated visitor space).",
+        ],
+      },
+      {
+        heading: "Research",
+        body: [
+          "Secondary research on 2026 trends and regulations covered FASTag standardization, parking as an 'energy hub' for EV owners, EV-ready mandates in Chennai and Bengaluru (1 EV-ready spot per 5 parking units), aggressive towing enforcement, and metro-station parking scarcity. \n\n 5 user interviews were distilled into personas: Ajith (daily commuter) worries about bike safety and sun damage, and finds Maps shows proximity but not shelter. Tanishka (EV professional) has been burned by chargers that are physically there but software-offline. Vikram (fine-averse driver) only learns a spot is 'No-Parking' after arriving, and now uses valet as insurance against fines. Angelina (efficiency-minded) would pay more to avoid circling and wants a parking-difficulty rating before leaving home. Siva (SUV owner) will walk 100 meters if it means his car is under a roof. \n\n Three patterns stood out: 'Available' pins that turn out to be offline erode trust; fear of fines (₹2,000+) and asset damage from sun or theft drive behavior as much as distance does; and users prefer approximate honesty ('likely full', 'usually available') over precise but laggy live data. The deck also reports that 31% of users have been towed.",
+        ],
+      },
+      {
+        heading: "Approach",
+        body: [
+          "The core strategy shift: from parking as a utility (find a spot) to a service-level agreement (guaranteed conditions like safety, shade and reliability). That produced three strategic directions: \n\n 1. From 'where' to 'how safe' (filters and layers): shade and security filters for roofed and CCTV/gated spots, a charger uptime score in place of a binary 'Available' pin, and a tow/fine risk layer. \n\n 2. Mental load reduction (transparency): honest states like 'Likely Full' or 'Usually Available', a '100m walk' path from the spot to the destination entrance, and pre-trip parking-difficulty ratings. \n\n 3. Premium peace of mind (verification and ease): verified facilities with guaranteed roofed or gated conditions, a frictionless FASTag exit, and asset-preservation for high-value vehicles (EV and SUV owners) willing to pay for guaranteed safety.",
+        ],
+      },
+      {
+        heading: "Decisions & trade-offs",
+        body: [
+          "Chose approximate honesty over false precision: users said they trust a 'probably working' signal more than a confident live status that is often wrong, so the recommendations lead with confidence scores and likelihood labels instead of more real-time data. \n\n Framed parking as a promise, not a pin, which shifts Maps from relying on crowd-sourced availability toward verification and partnerships (partner-verified spots, FASTag integration). \n\n Focused the three recommendations on trust, compliance and premium convenience rather than finding more spots, because the pain surfaced in interviews was not locating parking but not being able to rely on it.",
+        ],
+      },
+      {
+        heading: "Outcome",
+        body: [
+          "Delivered a research deck covering market sizing, 7 user segments, 5 interview personas, 3 strategic directions and 3 prioritized product recommendations, plus a live prototype. The recommendations are proposals grounded in the research, not shipped features: \n\n 1. Uptime Assurance Index (trust and reliability): replaces 'chargers appear available but are software-offline' with a confidence score (e.g., 85%) based on successful hardware checks in the last 3 hours, preventing wasted trips and building retention through transparency. \n\n 2. Risk & Protection Heatmap (compliance and safety): overlays tow-risk zones and shade/CCTV protection ratings and enables protected-path routing, acting as a financial shield against fines and asset damage. \n\n 3. Verified + FASTag Exit (premium convenience): partner-verified shaded or gated spots with one-tap FASTag express exit, driving monetization and loyalty by solving the 'last 10 minutes' friction.",
+        ],
+      },
+    ],
+  },
 ];
 
 
@@ -245,6 +298,15 @@ export const projects: Project[] = [
     status: "active",
     githubUrl: "https://github.com/Sweeny7-pixel/habitifyme-forReal",
     liveUrl: "https://habitifyme.lovable.app/",
+  },
+  {
+    id: "proj-2",
+    name: "ParkSmart",
+    description:
+      "Research-led case study on why Google Maps should treat parking as a reliability and safety question, not just a location one. Combines market sizing, 5 user interviews and 3 product recommendations: an Uptime Assurance Index, a Risk & Protection Heatmap, and Verified + FASTag Exit.",
+    techStack: ["Genspark AI", "User interviews", "Secondary market research"],
+    status: "active",
+    liveUrl: "https://chennaiurbanparking.lovable.app",
   },
 ];
 
