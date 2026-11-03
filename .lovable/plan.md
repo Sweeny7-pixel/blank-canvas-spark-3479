@@ -1,23 +1,19 @@
-# Don't bullet lead-in lines in case studies
+# Replace resume with the new upload
 
-In the HabitifyMe "Approach" section, the line "Built in three shipped phases:" is a lead-in sentence, but it currently gets an orange bullet dot like the items that follow it.
+The user uploaded an updated resume: `Sweeny_Santo_Silvester_AIPM.pdf`. The "Download Resume" button on the Contact page still serves the older `Sweeny_Santo_Silvester.pdf`. Swap the file behind the button to the new one.
 
-## What changes
+## Changes
 
-- When a multi-line block's first line ends with a colon, it renders as a normal intro paragraph instead of a bullet item.
-- The remaining lines still render as orange-dotted bullets.
-- Applies to every case study section; no content changes in the data file.
+1. **Replace the resume asset**
+   - Upload `/mnt/user-uploads/Sweeny_Santo_Silvester_AIPM.pdf` to CDN storage and overwrite the existing pointer `src/assets/resume.pdf.asset.json`, so the contact page's link automatically serves the new PDF.
+   - Delete the old `Sweeny_Santo_Silvester.pdf` from CDN storage so no stale copy lingers.
 
-Result:
+2. **Update the download filename**
+   - In `src/components/sections/ContactSection.tsx`, change `download="Sweeny_Santo_Silvester.pdf"` to `download="Sweeny_Santo_Silvester_AIPM.pdf"` so the saved file matches the new resume.
 
-```text
-Built in three shipped phases:
+No layout, styling, or content changes — the button stays exactly where it is.
 
-•  V1 — 10-field onboarding, ...
-•  V2 — prompt-driven custom plans, ...
-•  V3 (Habit Formation Engine) — ...
-```
+## Verification
 
-## Technical detail
-
-In `src/pages/CaseStudy.tsx`, inside the sections map: after splitting the paragraph on blank lines, if the first item ends with `:` and more items follow, render that first item in a `<p className="text-body leading-relaxed text-muted-foreground">` and build the `<ul>` from the remaining items. Everything else keeps the current behaviour.
+- Build passes (check build errors log).
+- Click "Download Resume" in the preview and confirm the downloaded file is the new `Sweeny_Santo_Silvester_AIPM.pdf`.
