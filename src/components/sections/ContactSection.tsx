@@ -57,7 +57,7 @@ export default function ContactSection() {
             <div className="pt-4">
               <a
                 href={resumeAsset.url}
-                download="Sweeny_Santo_Silvester.pdf"
+                download="Sweeny_Santo_Silvester_AIPM.pdf"
                 className="inline-block border border-foreground/40 px-8 py-3 text-small tracking-widest hover:bg-primary hover:border-primary hover:text-primary-foreground transition-colors"
               >
                 Download Resume
