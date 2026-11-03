@@ -236,6 +236,59 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
   },
+  {
+    slug: "blinkit-checkout-ux-audit",
+    title: "Blinkit Checkout UX Audit & Redesign",
+    subtitle:
+      "A heuristic and UX-laws audit of Blinkit's browse-to-checkout flow, with six recommendations and before/after mockups.",
+    role: "Product Manager / UX analyst (solo)",
+    timeframe: "UX audit",
+    summary:
+      "A solo audit of Blinkit's 5-step flow (Browse, Cart, Checkout, Payment, Confirm) on iOS and Android, evaluated against Nielsen's 10 usability heuristics and mapped to three UX laws (Hick's, Fitts's and Jakob's), each rated by impact. The findings became 6 recommendations and 3 redesign mockups that cut checkout clutter, surface stock issues early and put the pay button within thumb reach.",
+    metrics: [
+      { label: "Flow steps audited", value: "5" },
+      { label: "UX law violations", value: "3 (2 High, 1 Medium)" },
+      { label: "Recommendations / mockups", value: "6 / 3" },
+    ],
+    sections: [
+      {
+        heading: "Context",
+        body: [
+          "Blinkit is a quick-commerce grocery delivery app where speed is the promise, so friction between 'Add' and 'Paid' matters more than anywhere else. I scoped the audit to the 5-step flow (Browse, Cart, Checkout, Payment, Confirm) on iOS and Android, plus the Print Store section, and used annotated screenshots of each step as the evidence base.",
+        ],
+      },
+      {
+        heading: "Problem",
+        body: [
+          "Four problems stood out across the flow: \n\n The checkout page shows 6+ delivery-instruction icons, a donation prompt, a GSTIN upsell and the bill summary all at once, overwhelming users right before payment. \n\n The primary 'Add payment method' button sits at the very bottom of a long scrollable screen, so the thumb has to travel past every secondary section to reach it. \n\n An out-of-stock item only surfaces in the cart ('1 item is not in stock') with no warning on the product card, so users find out late. \n\n The Print Store uses a different layout and navigation from the rest of Blinkit, which breaks learned patterns.",
+        ],
+      },
+      {
+        heading: "Research",
+        body: [
+          "I evaluated the flow against Nielsen's 10 usability heuristics and found issues against 9 of them (Consistency and Standards was clean). Examples: no proactive out-of-stock alert and no delivery timer during checkout (visibility of system status); 'Handling charge' jargon and 'lac' review counts (match with the real world); no undo after removing cart items or applying a coupon (user control); a 12+ product grid with no smart default sort (recognition over recall); no saved quick-pay option for returning users (flexibility); an out-of-stock alert that suggests replacements but offers no direct 'Remove' action (error recovery); and no format or turnaround guidance in the Print Store (help and documentation). \n\n I then mapped the findings to three UX laws and rated each by impact: Hick's Law (too many choices at checkout) was High, Fitts's Law (distant pay button) was High, and Jakob's Law (inconsistent Print Store layout) was Medium.",
+        ],
+      },
+      {
+        heading: "Approach",
+        body: [
+          "The findings became six recommendations: \n\n 1. Real-time stock validation: check cart items against live inventory at add-to-cart and show a clear out-of-stock badge on the product grid. \n\n 2. Streamlined checkout bill: separate the bill summary from upsell and donation, using progressive disclosure (savings summary first, details on expand). \n\n 3. Smart default sorting: default category pages to 'Offers' or 'Popular' and add quick-filter chips (Under ₹50, New, Bestseller) to reduce choice paralysis. \n\n 4. Thumb-friendly CTA: a 56px+ pay button and a bottom-sheet pattern for payment selection, within natural thumb reach. \n\n 5. Unified navigation: one tab bar and layout system across Print Store, Grocery and all sub-sections. \n\n 6. Post-order donation flow: move 'Donate to Feeding India' to the confirmation screen to lower cognitive load during checkout. \n\n Three before/after mockups show the highest-impact fixes: a checkout reduced to bill summary, delivery address and pay button, with everything else behind a 'More options' link (Hick's); a sticky 'Pay ₹405 with UPI' button with saved UPI as a one-tap option above it (Fitts's); and an out-of-stock badge with 'Notify me' on the product card, plus 'Remove' and 'Replace' actions when the item is already in the cart.",
+        ],
+      },
+      {
+        heading: "Decisions & trade-offs",
+        body: [
+          "Prioritized by impact: the two High-impact issues (Hick's and Fitts's) both sit on the checkout screen right before payment, so the first mockups target them. \n\n Cut checkout to three essentials (bill summary, delivery address, pay button) and moved GSTIN, donation and delivery preferences behind a collapsible link, trading some visibility of secondary features for a faster path to pay. \n\n Moved the donation prompt to the post-order screen, trading a checkout-time ask for less cognitive load before payment and, per the audit's reasoning, better conversion through post-purchase goodwill.",
+        ],
+      },
+      {
+        heading: "Outcome",
+        body: [
+          "Delivered an annotated audit of the 5-step flow, an issues-and-fixes table against all 10 heuristics, a UX-laws mapping with impact ratings, 6 recommendations and 3 before/after redesign mockups. The findings come from expert heuristic review rather than user testing, and the redesigns are proposals rather than shipped changes.",
+        ],
+      },
+    ],
+  },
 ];
 
 
@@ -307,6 +360,20 @@ export const projects: Project[] = [
     techStack: ["Genspark AI", "User interviews", "Secondary market research"],
     status: "active",
     liveUrl: "https://chennaiurbanparking.lovable.app",
+  },
+  {
+    id: "proj-3",
+    name: "Blinkit Checkout UX Audit & Redesign",
+    description:
+      "A heuristic and UX-laws audit of Blinkit's browse-to-checkout flow, with six prioritized recommendations and before/after mockups that cut checkout clutter, surface stock issues early and put the pay button within thumb reach.",
+    techStack: [
+      "Nielsen's 10 heuristics",
+      "Hick's, Fitts's & Jakob's Laws",
+      "Annotated screenshots",
+      "Before/after mockups",
+    ],
+    status: "active",
+    liveUrl: "/blinkit-checkout-ux-audit.pdf",
   },
 ];
 
